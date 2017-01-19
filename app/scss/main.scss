@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mobile-menu';
+@import 'header';
+@import 'featured';
+@import 'about';
+@import 'contacts';
+@import 'footer';
+
+body{
+  //temp
+  box-sizing: border-box;
+  width: 320px;
+  border: 1px solid black;
+  //font-family: 'Open Sans', sans-serif;
+
+}
+
+.wrapper{
+  width: 81%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#map{
+  height: 460px;
+}

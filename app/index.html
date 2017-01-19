@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--endbuild-->
+</head>
+
+<body>
+  <section class="mobile-menu">
+    <ul class="mobile-menu__container">
+      <a class="mobile-menu__link" href="#">
+        <li class="mobile-menu__item mobile-menu__item--logo">
+          <div class="mobile-menu__icon-close"></div>
+          <div class="mobile-menu__logo"></div>
+        </li>
+      </a>
+      <a class="mobile-menu__link" href="#">
+        <li class="mobile-menu__item">
+          <div class="mobile-menu__wrapper">
+            <span class="mobile-menu__category">Каталог товаров
+            </span>
+          </div>
+        </li>
+      </a>
+      <a class="mobile-menu__link" href="#">
+        <li class="mobile-menu__item">
+          <div class="mobile-menu__wrapper">
+            <span class="mobile-menu__category">Вязание на заказ</span></div>
+        </li>
+      </a>
+      <a class="mobile-menu__link" href="#">
+        <li class="mobile-menu__item">
+          <div class="mobile-menu__wrapper">
+            <div class="mobile-menu__icon-search">
+            </div>
+            <span class="mobile-menu__category">Поиск по сайту</span>
+          </div>
+        </li>
+      </a>
+      <a class="mobile-menu__link" href="#">
+        <li class="mobile-menu__item">
+          <div class="mobile-menu__wrapper">
+            <div class="mobile-menu__icon-cart"></div>
+            <span class="mobile-menu__category">Корзина: пока пуста</span>
+          </div>
+        </li>
+      </a>
+      <a class="mobile-menu__link" href="#">
+        <li class="mobile-menu__item mobile-menu__item--logo">
+          <div class="mobile-menu__icon-hamburger"></div>
+          <div class="mobile-menu__logo"></div>
+        </li>
+      </a>
+    </ul>
+  </section>
+  <header class="main-header">
+    <div class="main-header__hero">
+      <h2 class="main-header__hero-text">Милые штуки</br> ручной</br> работы для дома</h2>
+    </div>
+    <div class="category category--bright">
+      <div class="wrapper">
+        Предметы</br> интерьера
+        <div class="category__icon-interior">
+        </div>
+      </div>
+    </div>
+    <div class="category category--dark">
+      <div class="wrapper">
+        Детские</br> игрушки
+        <div class="category__icon-toy">
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="featured">
+    <div class="wrapper">
+      <div class="weekly-deal">
+        <span class="weekly-deal__header">Вязаные корзинки</span>
+        <span class="weekly-deal__subheader">Товар недели</span>
+        <p class="weekly-deal__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="specs-table">
+          <tr>
+            <td class="specs-table__attr">Цвет:</td>
+            <td class="specs-table__val">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="specs-table__attr">Диаметр:</td>
+            <td class="specs-table__val">25 см</td>
+          </tr>
+          <tr class="specs-table__row">
+            <td class="specs-table__attr">Высота:</td>
+            <td class="specs-table__val">15 см</td>
+          </tr>
+        </table>
+        <img class="weekly-deal__img" src="../images/triple-set-mobile.jpg">
+        <span class="price">Цена: 990 руб.</span>
+        <button type="button" name="button" class="btn">Заказать</button>
+      </div>
+    </div>
+    <div class="zigzag-line"></div>
+  </section>
+  <section class="about">
+    <div class="wrapper">
+      <span class="about__header">Коротко о нас:</span>
+      <ul class="features">
+        <li class="features__item">
+          <div class="features__icon-1"></div>Экологически чистые материалы</li>
+        <li class="features__item">
+          <div class="features__icon-2"></div>Скандинавский стиль по российской цене</li>
+        <li class="features__item">
+          <div class="features__icon-3"></div>Увеличивает лайки на фотографиях</li>
+        <li class="features__item">
+          <div class="features__icon-4"></div>Связано вручную с любовью и умилением</li>
+        <li class="features__item">
+          <div class="features__icon-5"></div>Поддержка отечественного производителя</li>
+        <li class="features__item">
+          <div class="features__icon-6"></div>Поставляется в подарочной упаковке</li>
+      </ul>
+      <div class="reviews">
+        <span class="reviews__header">Отзывы</span>
+        <p class="user-review">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+        </p>
+        <span class="user-review user-review__username">Анастасия Красильникова</span>
+        <span class="user-revie user-review__twitter">@misssssiskras</span>
+        <div class="slider-buttons__container">
+          <button type="button" name="button" class="btn slider-buttons__prev"><div class="slider-buttons__icon-left-arrow"></div></button>
+          <button type="button" name="button" class="btn slider-buttons__next"><div class="slider-buttons__icon-right-arrow"></div></button>
+        </div>
+        <button type="button" name="button" class="btn reviews__btn">Написать</button>
+      </div>
+    </div>
+    <div class="zigzag-line"></div>
+  </section>
+  <section class="contacts">
+    <div class="wrapper">
+      <span class="contacts__header">Контакты</span>
+      <table class="table-contacts">
+        <tr>
+          <td class="table-contacts__email">e-mail:</td>
+          <td class="table-contacts__email-val"><span class="table-contacts__email-link">info@mimimishkashop.ru</span></td>
+        </tr>
+        <tr>
+          <td class="table-contacts__adress">адрес:</td>
+          <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+        </tr>
+      </table>
+    </div>
+    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Z8FkgpHx39fJqpebqLXIBSyANGZKi98O&amp;width=100%&amp;height=460&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script> -->
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+
+
+    <div id="YMapsID" style="height:460px"></div>
+  </section>
+
+  <!--build:js js/main.min.js -->
+
+  <script src="js/lib/a-library.js"></script>
+  <script src="js/lib/another-library.js"></script>
+  <script src="js/ya-map.js">
+  </script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>
