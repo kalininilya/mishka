@@ -18,7 +18,6 @@
   font-family: $main-font, $main-ff;
   font-size: 16px;
   font-weight: 700;
-
   &__icon-1 {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -26,7 +25,6 @@
     height: 50px;
     background: url("../images/mobile/icon-feature-1.png") no-repeat center;
   }
-
   &__icon-2 {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -34,7 +32,6 @@
     height: 50px;
     background: url("../images/mobile/icon-feature-2.png") no-repeat center;
   }
-
   &__icon-3 {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -42,7 +39,6 @@
     height: 50px;
     background: url("../images/mobile/icon-feature-3.png") no-repeat center;
   }
-
   &__icon-4 {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -50,7 +46,6 @@
     height: 50px;
     background: url("../images/mobile/icon-feature-4.png") no-repeat center;
   }
-
   &__icon-5 {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -58,7 +53,6 @@
     height: 50px;
     background: url("../images/mobile/icon-feature-5.png") no-repeat center;
   }
-
   &__icon-6 {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -79,7 +73,6 @@
     line-height: 30px;
     margin: 0;
   }
-
   &__btn {
     margin-top: 40px;
   }
@@ -91,13 +84,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-
   &__username {
     color: $black;
     font-weight: 700;
     line-height: 24px;
   }
-
   &__twitter {
     color: $grey;
     font-weight: 400;
@@ -110,14 +101,12 @@
     margin-top: 26px;
     display: flex;
   }
-
   &__prev {
     border: 1px solid $border-bottom;
     margin: 0;
     padding: 0;
     //width: 50%;
   }
-
   &__next {
     border: 1px solid $border-bottom;
     border-left: none;
@@ -125,7 +114,6 @@
     padding: 0;
     //width: 50%;
   }
-
   &__icon-left-arrow {
     margin-left: auto;
     margin-right: auto;
@@ -133,7 +121,6 @@
     height: 26px;
     background: url("../images/mobile/huge-arrow-left-icon.png");
   }
-
   &__icon-right-arrow {
     margin-left: auto;
     margin-right: auto;
@@ -142,4 +129,8 @@
     height: 26px;
     background: url("../images/mobile/huge-arrow-left-icon.png");
   }
+}
+
+.slider-container {
+  min-height: 200px;
 }

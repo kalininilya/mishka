@@ -126,15 +126,29 @@
       </ul>
       <div class="reviews">
         <span class="reviews__header">Отзывы</span>
-        <p class="user-review">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают
-          больше лайков!
-        </p>
-        <span class="user-review user-review__username">Анастасия Красильникова</span>
-        <span class="user-revie user-review__twitter">@misssssiskras</span>
+        <div class="slider-container">
+          <p class="user-review"> В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+          </p>
+          <span class="user-review user-review__username">Анастасия Красильникова</span>
+          <span class="user-revie user-review__twitter">@misssssiskras</span>
+        </div>
+        <div class="slider-container">
+          <p class="user-review">
+            Потрясающий магазин
+          </p>
+          <span class="user-review user-review__username">Ольга Иванова</span>
+          <span class="user-revie user-review__twitter">@asiskras</span>
+        </div>
+        <div class="slider-container">
+          <p class="user-review">Замечательный магазин В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+          </p>
+          <span class="user-review user-review__username">Эльвира Петрова</span>
+          <span class="user-revie user-review__twitter">@elvirassdd</span>
+        </div>
+
         <div class="slider-buttons__container">
-          <button type="button" name="button" class="btn slider-buttons__prev"><div class="slider-buttons__icon-left-arrow"></div></button>
-          <button type="button" name="button" class="btn slider-buttons__next"><div class="slider-buttons__icon-right-arrow"></div></button>
+          <button type="button" name="button" class="btn slider-buttons__prev" onclick="plusDivs(-1)"><div class="slider-buttons__icon-left-arrow"></div></button>
+          <button type="button" name="button" class="btn slider-buttons__next" onclick="plusDivs(+1)"><div class="slider-buttons__icon-right-arrow"></div></button>
         </div>
         <button type="button" name="button" class="btn reviews__btn">Написать</button>
       </div>
@@ -157,47 +171,47 @@
     </div>
     <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
     <div id="YMapsID" style="height:460px"></div>
-<div class="wrapper">
-  <button type="button" name="button" class="btn contacts__btn">Напишите нам</button>
-</div>
-</section>
-<footer class="main-footer">
-  <div class="wrapper">
-    <div class="social-icons-container">
-      <a href="#">
-        <div class="icon-social icon-social--insta"></div>
-      </a>
-      <a href="#">
-        <div class="icon-social icon-social--fb"></div>
-      </a>
-      <a href="#">
-        <div class="icon-social icon-social--twitter"></div>
-      </a>
+    <div class="wrapper">
+      <button type="button" name="button" class="btn contacts__btn">Напишите нам</button>
     </div>
-  </div>
-  <div class="wrapper">
-    <div class="divider divider--footer">
+  </section>
+  <footer class="main-footer">
+    <div class="wrapper">
+      <div class="social-icons-container">
+        <a href="#">
+          <div class="icon-social icon-social--insta"></div>
+        </a>
+        <a href="#">
+          <div class="icon-social icon-social--fb"></div>
+        </a>
+        <a href="#">
+          <div class="icon-social icon-social--twitter"></div>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="wrapper">
-    <div class="copyright">
-      <span>Разработано</span>
-      <a href="#">
-        <div class="icon-academy icon-academy--footer"></div>
-      </a>
+    <div class="wrapper">
+      <div class="divider divider--footer">
+      </div>
     </div>
-  </div>
-  </div>
-</footer>
+    <div class="wrapper">
+      <div class="copyright">
+        <span>Разработано</span>
+        <a href="#">
+          <div class="icon-academy icon-academy--footer"></div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
 
 
-<!--build:js js/main.min.js -->
+  <!--build:js js/main.min.js -->
 
-<script src="js/lib/a-library.js"></script>
-<script src="js/lib/another-library.js"></script>
-<script src="js/ya-map.js"></script>
-<script src="js/main.js"></script>
-<!-- endbuild -->
+  <script src="js/lib/a-library.js"></script>
+  <script src="js/lib/another-library.js"></script>
+  <script src="js/ya-map.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>

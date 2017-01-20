@@ -329,6 +329,9 @@
   height: 26px;
   background: url("../images/mobile/huge-arrow-left-icon.png"); }
 
+.slider-container {
+  min-height: 200px; }
+
 .contacts {
   color: #444444;
   font-family: "Open Sans", sans-serif;
