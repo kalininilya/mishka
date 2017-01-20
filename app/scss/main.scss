@@ -1,27 +1,31 @@
 @import 'variables';
 @import 'mobile-menu';
+@import 'top-menu';
 @import 'header';
 @import 'featured';
 @import 'about';
 @import 'contacts';
 @import 'footer';
-
-body{
-  //temp
+body {
   box-sizing: border-box;
-  width: 320px;
-  border: 1px solid black;
-  //font-family: 'Open Sans', sans-serif;
-
 }
 
-.wrapper{
-  width: 81%;
-  margin: 0 auto;
-  position: relative;
+@media (max-width: 768px) {
+  .wrapper {
+    width: 81%;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
-#map{
+@media (min-width: 768px) {
+  .wrapper {
+    width: 87%;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+#map {
   height: 460px;
 }
 
@@ -37,7 +41,7 @@ body{
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-  &--feedback{
+  &--feedback {
     margin-top: 40px;
     margin-bottom: 40px;
   }

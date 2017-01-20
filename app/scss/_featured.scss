@@ -1,7 +1,3 @@
-.featured {
-
-}
-
 .weekly-deal {
   &__header {
     display: block;
@@ -13,7 +9,6 @@
     line-height: 30px;
     margin: 0;
   }
-
   &__subheader {
     display: block;
     margin: 0;
@@ -26,7 +21,6 @@
     line-height: 16px;
     text-transform: uppercase;
   }
-
   &__descr {
     color: $grey;
     font-family: $tertiary-font, $main-ff;
@@ -35,7 +29,7 @@
     line-height: 24px;
     padding-bottom: 35px;
   }
-  &__img{
+  &__img {
     height: 315px;
     display: block;
     margin-left: auto;
@@ -47,16 +41,15 @@
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 28px;
-
   &__attr {
     border-bottom: 1px solid $border-bottom;
   }
-
   &__val {
     border-bottom: 1px solid $border-bottom;
   }
   color: $grey;
-  font-family: $tertiary-font, $main-ff;
+  font-family: $tertiary-font,
+  $main-ff;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -73,11 +66,10 @@
   line-height: 24px;
 }
 
-
-.zigzag-line{
+.zigzag-line {
   height: 6px;
   width: 100%;
   margin-top: 35px;
   margin-bottom: 31px;
-  background: url("../images/zigzag-line-mobile.png");
+  background: url("../images/mobile/zigzag-line-mobile.png");
 }

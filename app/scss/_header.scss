@@ -1,6 +1,6 @@
 .main-header {
   &__hero {
-    background: url("../images/hero-mobile.jpg") no-repeat;
+    background: url("../images/mobile/hero-mobile.jpg") no-repeat;
     background-size: cover;
     height: 205px;
     padding-top: 95px;
@@ -42,7 +42,7 @@
     width: 40px;
     height: 62px;
     opacity: 0.5;
-    background: url("../images/interior-icon.png");
+    background: url("../images/mobile/interior-icon.png");
     position: absolute;
     right: 9px;
     top: -7px;
@@ -52,7 +52,7 @@
     width: 60px;
     height: 60px;
     opacity: 0.5;
-    background: url("../images/toy-icon.png");
+    background: url("../images/mobile/toy-icon.png");
     position: absolute;
     right: 0;
     top: -7px;
