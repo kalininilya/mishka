@@ -1,75 +1,79 @@
-
-  .mobile-menu {
-    &__wrapper {
-      width: 260px;
-      margin: 0 auto;
-      //padding-left: 44px;
-      padding-top: 27px;
-      position: relative;
-    }
-    &__container {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      margin: 0;
-    }
-    &__item {
-      font-family: $main-font, $main-ff;
-      font-weight: 700;
-      line-height: 24px;
-      padding-left: 44px;
-      min-height: 79px;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      list-style-type: none;
-      text-decoration: none;
-      color: $black;
-      border-bottom: 1px solid $border-bottom;
-      &--logo {
-        min-height: 57px;
-      }
-    }
-    &__category {
-      margin-left: 44px;
-    }
-    &__link {
-      text-decoration: none;
-    }
-    &__logo {
-      margin-top: 22px;
-      margin-left: auto;
-      margin-right: auto;
-      height: 35px;
-      width: 86px;
-      background: url("../images/mobile/mishka-logo-mobile.png");
-    }
-    &__icon-cart {
-      position: absolute;
-      width: 21px;
-      height: 18px;
-      background: url("../images/mobile/cart-icon.png");
-    }
-    &__icon-close {
-      position: absolute;
-      right: 30px;
-      top: 7px;
-      width: 21px;
-      height: 20px;
-      background: url("../images/mobile/menu-close-icon.png");
-    }
-    &__icon-search {
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      background: url("../images/mobile/search-icon.png");
-    }
-    &__icon-hamburger {
-      position: absolute;
-      right: 30px;
-      top: 12px;
-      width: 20px;
-      height: 14px;
-      background: url("../images/mobile/menu-hamburger-icon.png");
+.mobile-menu {
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+    //padding-left: 44px;
+    padding-top: 27px;
+    position: relative;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    font-family: $main-font, $main-ff;
+    font-weight: 700;
+    line-height: 24px;
+    padding-left: 44px;
+    min-height: 79px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style-type: none;
+    text-decoration: none;
+    color: $black;
+    border-bottom: 1px solid $border-bottom;
+    &--logo {
+      min-height: 57px;
     }
   }
+  &__category {
+    margin-left: 44px;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__logo {
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35px;
+    width: 86px;
+    background: url("../images/mobile/mishka-logo-mobile.png");
+  }
+  &__icon-cart {
+    position: absolute;
+    width: 21px;
+    height: 18px;
+    background: url("../images/mobile/cart-icon.png");
+  }
+  &__icon-close {
+    position: absolute;
+    right: 30px;
+    top: 7px;
+    width: 21px;
+    height: 20px;
+    background: url("../images/mobile/menu-close-icon.png");
+  }
+  &__icon-search {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("../images/mobile/search-icon.png");
+  }
+  &__icon-hamburger {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    width: 20px;
+    height: 14px;
+    background: url("../images/mobile/menu-hamburger-icon.png");
+  }
+}
+@media (min-width: 600px) {
+  .mobile-menu{
+    display: none;
+  }
+}
