@@ -2,7 +2,6 @@
   &__wrapper {
     width: 260px;
     margin: 0 auto;
-    //padding-left: 44px;
     padding-top: 27px;
     position: relative;
   }
@@ -72,7 +71,8 @@
     background: url("../images/mobile/menu-hamburger-icon.png");
   }
 }
-@media (min-width: 600px) {
+
+@include for-tablet-up {
   .mobile-menu{
     display: none;
   }

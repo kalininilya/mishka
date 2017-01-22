@@ -72,40 +72,48 @@
   .mobile-menu {
     display: none; } }
 
-.top-menu__link {
-  text-decoration: none; }
+@media (max-width: 599px) {
+  .top-menu-tablet-up {
+    display: none; }
+  .top-menu-mobile__link {
+    text-decoration: none; }
+  .top-menu-mobile__logo {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35px;
+    width: 86px;
+    background: url("../images/mobile/mishka-logo-mobile.png"); }
+  .top-menu-mobile__icon-hamburger {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    width: 20px;
+    height: 14px;
+    background: url("../images/mobile/menu-hamburger-icon.png"); }
+  .top-menu-mobile__item {
+    font-family: "Verdana", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    padding-left: 44px;
+    min-height: 60px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style-type: none;
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid #ececec; }
+    .top-menu-mobile__item--logo {
+      min-height: 57px; } }
 
-.top-menu__logo {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 35px;
-  width: 86px;
-  background: url("../images/mobile/mishka-logo-mobile.png"); }
-
-.top-menu__icon-hamburger {
-  position: absolute;
-  right: 30px;
-  top: 12px;
-  width: 20px;
-  height: 14px;
-  background: url("../images/mobile/menu-hamburger-icon.png"); }
-
-.top-menu__item {
-  font-family: "Verdana", sans-serif;
-  font-weight: 700;
-  line-height: 24px;
-  padding-left: 44px;
-  min-height: 60px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  list-style-type: none;
-  text-decoration: none;
-  color: #000000;
-  border-bottom: 1px solid #ececec; }
-  .top-menu__item--logo {
-    min-height: 57px; }
+@media (min-width: 600px) {
+  .top-menu-mobile {
+    display: none; }
+  .top-menu-tablet-up {
+    min-height: 88px; }
+    .top-menu-tablet-up .main-logo__top-menu {
+      margin-top: 22px; } }
 
 .main-header__hero {
   background: url("../images/mobile/hero-mobile.jpg") no-repeat;
@@ -417,13 +425,12 @@
 body {
   box-sizing: border-box; }
 
-@media (max-width: 768px) {
-  .wrapper {
-    width: 81%;
-    margin: 0 auto;
-    position: relative; } }
+.wrapper {
+  width: 81%;
+  margin: 0 auto;
+  position: relative; }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .wrapper {
     width: 87%;
     margin: 0 auto;

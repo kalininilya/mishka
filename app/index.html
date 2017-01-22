@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Mishka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -52,14 +53,19 @@
       </a>
     </ul>
   </section>
-  <div class="top-menu">
-    <a class="top-menu__link" href="#">
-      <div class="top-menu__item">
-        <div class="top-menu__icon-hamburger"></div>
-        <div class="top-menu__logo"></div>
+  <section class="top-menu-mobile">
+    <a class="top-menu-mobile__link" href="#">
+      <div class="top-menu-mobile__item">
+        <div class="top-menu-mobile__icon-hamburger"></div>
+        <div class="top-menu-mobile__logo"></div>
       </div>
     </a>
-  </div>
+  </section>
+  <section class="top-menu-tablet-up">
+    <div class="wrapper">
+      <img class="main-logo__top-menu" src="../images/tablet/mishka-logo-tablet.png">
+    </div>
+  </section>
   <header class="main-header">
     <div class="main-header__hero">
       <h2 class="main-header__hero-text">Милые штуки</br> ручной</br> работы для дома</h2>
@@ -127,7 +133,8 @@
       <div class="reviews">
         <span class="reviews__header">Отзывы</span>
         <div class="slider-container">
-          <p class="user-review"> В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+          <p class="user-review"> В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают
+            больше лайков!
           </p>
           <span class="user-review user-review__username">Анастасия Красильникова</span>
           <span class="user-revie user-review__twitter">@misssssiskras</span>
@@ -140,12 +147,12 @@
           <span class="user-revie user-review__twitter">@asiskras</span>
         </div>
         <div class="slider-container">
-          <p class="user-review">Замечательный магазин В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+          <p class="user-review">Замечательный магазин В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее,
+            а также набирают больше лайков!
           </p>
           <span class="user-review user-review__username">Эльвира Петрова</span>
           <span class="user-revie user-review__twitter">@elvirassdd</span>
         </div>
-
         <div class="slider-buttons__container">
           <button type="button" name="button" class="btn slider-buttons__prev" onclick="plusDivs(-1)"><div class="slider-buttons__icon-left-arrow"></div></button>
           <button type="button" name="button" class="btn slider-buttons__next" onclick="plusDivs(+1)"><div class="slider-buttons__icon-right-arrow"></div></button>
@@ -203,10 +210,7 @@
     </div>
     </div>
   </footer>
-
-
   <!--build:js js/main.min.js -->
-
   <script src="js/lib/a-library.js"></script>
   <script src="js/lib/another-library.js"></script>
   <script src="js/ya-map.js"></script>

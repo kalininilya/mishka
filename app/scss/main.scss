@@ -11,15 +11,13 @@ body {
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .wrapper {
-    width: 81%;
-    margin: 0 auto;
-    position: relative;
-  }
+.wrapper {
+  width: 81%;
+  margin: 0 auto;
+  position: relative;
 }
 
-@media (min-width: 768px) {
+@include for-tablet-up {
   .wrapper {
     width: 87%;
     margin: 0 auto;

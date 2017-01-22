@@ -1,24 +1,28 @@
-.top-menu {
-  &__link {
-    text-decoration: none;
+@include for-mobile-only {
+  .top-menu-tablet-up {
+    display: none;
   }
-  &__logo {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 35px;
-    width: 86px;
-    background: url("../images/mobile/mishka-logo-mobile.png");
-  }
-  &__icon-hamburger {
-    position: absolute;
-    right: 30px;
-    top: 12px;
-    width: 20px;
-    height: 14px;
-    background: url("../images/mobile/menu-hamburger-icon.png");
-  }
-  &__item {
+  .top-menu-mobile {
+    &__link {
+      text-decoration: none;
+    }
+    &__logo {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 35px;
+      width: 86px;
+      background: url("../images/mobile/mishka-logo-mobile.png");
+    }
+    &__icon-hamburger {
+      position: absolute;
+      right: 30px;
+      top: 12px;
+      width: 20px;
+      height: 14px;
+      background: url("../images/mobile/menu-hamburger-icon.png");
+    }
+    &__item {
       font-family: $main-font, $main-ff;
       font-weight: 700;
       line-height: 24px;
@@ -35,4 +39,19 @@
         min-height: 57px;
       }
     }
+  }
+}
+
+@include for-tablet-up {
+  .top-menu-mobile {
+    display: none;
+  }
+  .top-menu-tablet-up {
+    min-height: 88px;
+    .main-logo {
+      &__top-menu {
+        margin-top: 22px;
+      }
+    }
+  }
 }
