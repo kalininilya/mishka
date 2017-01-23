@@ -1,23 +1,31 @@
 // Breakpoints mixins
 @mixin for-mobile-only {
-  @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
+
 @mixin for-tablet-up {
-  @media (min-width: 600px) { @content; }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
+
 @mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
+
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
+  @media (min-width: 1800px) {
+    @content;
+  }
 }
-
-
 
 // usage
 // .my-box {
 //   padding: 10px;
-  
 //   @include for-desktop-up {
 //     padding: 20px;
 //   }

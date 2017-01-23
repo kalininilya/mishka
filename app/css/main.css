@@ -111,9 +111,54 @@
   .top-menu-mobile {
     display: none; }
   .top-menu-tablet-up {
-    min-height: 88px; }
-    .top-menu-tablet-up .main-logo__top-menu {
-      margin-top: 22px; } }
+    vertical-align: top;
+    min-height: 88px;
+    border-bottom: 1px solid #ececec; }
+    .top-menu-tablet-up .main-logo--top-menu {
+      vertical-align: top;
+      display: inline-block;
+      margin-top: 22px; }
+  .search-block {
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 88px;
+    min-width: 82px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec; }
+  .search-block:before {
+    content: "";
+    display: block;
+    background: url("../images/mobile/search-icon.png");
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18px;
+    height: 18px; }
+  .cart-block {
+    font-family: "Verdana", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    float: right;
+    vertical-align: bottom;
+    position: relative;
+    min-height: 88px;
+    min-width: 264px;
+    height: 100%; }
+    .cart-block__cart-status {
+      display: inline-block;
+      margin-left: 77px;
+      margin-top: 30px; }
+  .cart-block:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/mobile/cart-icon.png");
+    top: 36px;
+    left: 31px;
+    width: 21px;
+    height: 18px; } }
 
 .main-header__hero {
   background: url("../images/mobile/hero-mobile.jpg") no-repeat;

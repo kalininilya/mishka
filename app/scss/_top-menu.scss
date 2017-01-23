@@ -47,11 +47,61 @@
     display: none;
   }
   .top-menu-tablet-up {
+    vertical-align: top;
     min-height: 88px;
+    border-bottom: 1px solid $border-bottom;
     .main-logo {
-      &__top-menu {
+      &--top-menu {
+        vertical-align: top;
+        display: inline-block;
         margin-top: 22px;
       }
     }
+  }
+  .search-block {
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 88px;
+    min-width: 82px;
+    border-left: 1px solid $border-bottom;
+    border-right: 1px solid $border-bottom;
+  }
+  .search-block:before {
+    content: "";
+    display: block;
+    background: url("../images/mobile/search-icon.png");
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18px;
+    height: 18px;
+  }
+  .cart-block {
+    font-family: $main-font, $main-ff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    float: right;
+    vertical-align: bottom;
+    position: relative;
+    min-height: 88px;
+    min-width: 264px;
+    height: 100%;
+    &__cart-status {
+      display: inline-block;
+      margin-left: 77px;
+      margin-top: 30px;
+    }
+  }
+  .cart-block:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/mobile/cart-icon.png");
+    top: 36px;
+    left: 31px;
+    width: 21px;
+    height: 18px;
   }
 }
