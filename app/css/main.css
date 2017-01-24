@@ -207,6 +207,10 @@
     right: 0;
     top: -7px; }
 
+@media (max-width: 599px) {
+  .hero-links {
+    display: none; } }
+
 .weekly-deal__header {
   display: block;
   font-family: "Verdana", sans-serif;
