@@ -212,34 +212,77 @@
     display: none; } }
 
 @media (min-width: 600px) {
-  .main-header__hero {
+  .main-header {
+    position: relative;
     background: url("../images/tablet/hero-tablet.jpg") no-repeat;
-    background-size: cover;
-    height: 670px;
-    padding-top: 25px; }
-  .main-header__hero-text {
-    text-align: center;
-    font-family: "Verdana", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    margin-top: 150px;
-    margin-bottom: 370px; }
-  .main-header__wrapper {
-    width: 260px;
-    margin: 0 auto;
-    position: relative; }
+    background-size: cover; }
+    .main-header__hero {
+      height: 640px;
+      padding-top: 25px; }
+    .main-header__hero-text {
+      text-align: center;
+      font-family: "Verdana", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      margin-top: 150px;
+      margin-bottom: 370px; }
+    .main-header__wrapper {
+      width: 260px;
+      margin: 0 auto;
+      position: relative; }
+    .main-header:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 24px;
+      width: 100%;
+      bottom: -12px;
+      background: url("../images/tablet/zigzag-fill-tablet.png"); }
   .hero-links__link {
+    font-size: 14px;
     font-weight: 700;
     font-family: "Verdana", sans-serif;
     margin-right: 35px; }
     .hero-links__link--delivery {
+      font-size: 14px;
       margin-right: 0;
       float: right;
       font-family: "Verdana", sans-serif;
       color: #444444; }
-  .wrapper--hero {
+  .wrapper--hero-tablet {
     width: 87%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .category {
+    height: 103px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Tahoma", sans-serif;
+    font-weight: 700;
+    color: #ffffff; }
+    .category--bright {
+      background-color: #63d1bb; }
+    .category--dark {
+      background-color: #56c3b2; }
+    .category__icon-interior {
+      width: 40px;
+      height: 62px;
+      opacity: 0.5;
+      background: url("../images/mobile/interior-icon.png");
+      position: absolute;
+      right: 9px;
+      top: -7px; }
+    .category__icon-toy {
+      width: 60px;
+      height: 60px;
+      opacity: 0.5;
+      background: url("../images/mobile/toy-icon.png");
+      position: absolute;
+      right: 0;
+      top: -7px; }
+    .category__container {
+      display: flex; } }
 
 .weekly-deal__header {
   display: block;

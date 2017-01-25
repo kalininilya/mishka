@@ -61,10 +61,11 @@
 
 @include for-tablet-up {
   .main-header {
+    position: relative;
+    background: url("../images/tablet/hero-tablet.jpg") no-repeat;
+    background-size: cover;
     &__hero {
-      background: url("../images/tablet/hero-tablet.jpg") no-repeat;
-      background-size: cover;
-      height: 670px;
+      height: 640px;
       padding-top: 25px;
     }
     &__hero-text {
@@ -80,13 +81,24 @@
       margin: 0 auto;
       position: relative;
     }
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 24px;
+      width: 100%;
+      bottom: -12px;
+      background: url("../images/tablet/zigzag-fill-tablet.png");
+    }
   }
   .hero-links {
     &__link {
+      font-size: 14px;
       font-weight: 700;
       font-family: $main-font, $main-ff;
       margin-right: 35px;
       &--delivery {
+        font-size: 14px;
         margin-right: 0;
         float: right;
         font-family: $main-font, $main-ff;
@@ -94,8 +106,45 @@
       }
     }
   }
-  .wrapper--hero {
+  .wrapper--hero-tablet {
     width: 87%;
     margin: 0 auto;
+  }
+  .category {
+    height: 103px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    font-size: 18px;
+    font-family: $secondary-font, $main-ff;
+    font-weight: 700;
+    color: $white;
+    &--bright {
+      background-color: $light-green;
+    }
+    &--dark {
+      background-color: $dark-green;
+    }
+    &__icon-interior {
+      width: 40px;
+      height: 62px;
+      opacity: 0.5;
+      background: url("../images/mobile/interior-icon.png");
+      position: absolute;
+      right: 9px;
+      top: -7px;
+    }
+    &__icon-toy {
+      width: 60px;
+      height: 60px;
+      opacity: 0.5;
+      background: url("../images/mobile/toy-icon.png");
+      position: absolute;
+      right: 0;
+      top: -7px;
+    }
+    &__container {
+      display: flex;
+    }
   }
 }
