@@ -59,6 +59,43 @@
   }
 }
 
-@include for-desktop-up {
-  
+@include for-tablet-up {
+  .main-header {
+    &__hero {
+      background: url("../images/tablet/hero-tablet.jpg") no-repeat;
+      background-size: cover;
+      height: 670px;
+      padding-top: 25px;
+    }
+    &__hero-text {
+      text-align: center;
+      font-family: $main-font, $main-ff;
+      font-weight: 700;
+      font-size: 40px;
+      margin-top: 150px;
+      margin-bottom: 370px;
+    }
+    &__wrapper {
+      width: 260px;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
+  .hero-links {
+    &__link {
+      font-weight: 700;
+      font-family: $main-font, $main-ff;
+      margin-right: 35px;
+      &--delivery {
+        margin-right: 0;
+        float: right;
+        font-family: $main-font, $main-ff;
+        color: $grey;
+      }
+    }
+  }
+  .wrapper--hero {
+    width: 87%;
+    margin: 0 auto;
+  }
 }
