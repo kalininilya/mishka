@@ -1,3 +1,3 @@
-# Mishka project (Work in progress)
+# Mishka project
 
 Adaptive website
