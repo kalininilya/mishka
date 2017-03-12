@@ -6,7 +6,7 @@ YMaps.jQuery(function() {
   // Создает стиль значка метки
   var s = new YMaps.Style();
   s.iconStyle = new YMaps.IconStyle();
-  s.iconStyle.href = "/images/mobile/map-pin.png";
+  s.iconStyle.href = "./images/mobile/map-pin.png";
   s.iconStyle.size = new YMaps.Point(67, 100);
   s.iconStyle.offset = new YMaps.Point(-33, -100);
   var placemark = new YMaps.Placemark(new YMaps.GeoPoint(30.329370,59.934989), {
