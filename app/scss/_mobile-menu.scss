@@ -1,4 +1,9 @@
+.active{
+  display: block;
+}
+
 .mobile-menu {
+
   &__wrapper {
     width: 260px;
     margin: 0 auto;
@@ -10,6 +15,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+    display: none;
   }
   &__item {
     font-family: $main-font, $main-ff;

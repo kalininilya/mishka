@@ -39,6 +39,9 @@
     &--tablet {
       display: none;
     }
+    &--desktop {
+      display: none;
+    }
   }
 }
 
@@ -141,6 +144,9 @@
         display: flex;
         width: 49%;
       }
+      &--desktop {
+        display: none;
+      }
     }
   }
   .specs-table {
@@ -183,5 +189,19 @@
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+}
+
+@include for-desktop-up {
+  .weekly-deal {
+    &__container {
+      &--tablet {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+        width: 49%;
+      }
+    }
   }
 }

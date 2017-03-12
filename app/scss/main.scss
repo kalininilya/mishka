@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'buttons';
 @import 'breakpoints';
 @import 'mobile-menu';
 @import 'top-menu';
@@ -7,8 +8,11 @@
 @import 'about';
 @import 'contacts';
 @import 'footer';
+
+
 body {
   box-sizing: border-box;
+  min-width: 300px;
 }
 
 .wrapper {
@@ -29,20 +33,3 @@ body {
   height: 460px;
 }
 
-.btn {
-  cursor: pointer;
-  min-height: 52px;
-  width: 100%;
-  background-color: transparent;
-  border: 2px solid $grey;
-  color: $grey;
-  font-family: $tertiary-font, $main-ff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
-  text-transform: uppercase;
-  &--feedback {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}

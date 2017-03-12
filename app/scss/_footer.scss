@@ -54,3 +54,26 @@
     margin-left: 25px;
   }
 }
+
+@include for-tablet-up {
+  .divider {
+    display: none;
+  }
+  .main-footer {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-icons-container{
+    width: 141px; 
+    margin: 0;
+    margin-right: 10px;
+  }
+  .mishka-logo-no-bg {
+    content: '';
+    width: 152px;
+    height: 34px;
+    background: url("../images/tablet/mishka-logo-no-bg.png") no-repeat;
+  }
+}

@@ -4,8 +4,8 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
-
   &__header {
+    color: $black;
     display: block;
     font-family: $main-font, $main-ff;
     font-size: 24px;
@@ -13,25 +13,70 @@
     padding-top: 0;
     padding-bottom: 3px;
     line-height: 30px;
-    margin: 0;
+    margin-bottom: 30px;
   }
-  &__btn{
+  &__btn {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
-.table-contacts{
-  &__email{
-    vertical-align: top;
-    width: 28%;
-  }
-  &__adress{
-    vertical-align: top;
-    width: 28%;
 
+.table-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  &__item {
+    display: flex;
+    flex-grow: 2;
   }
-  &__email-link{
+  &__email {
+    vertical-align: top;
+    width: 28%;
+  }
+  &__adress {
+    vertical-align: top;
+    width: 28%;
+  }
+  &__email-link {
     padding-bottom: 4 px;
     border-bottom: 1px solid $light-green;
+    cursor: pointer;
+    &:hover{
+      color: $light-green;
+    }
+    &:active{
+      opacity: 0.5;
+    }
+  }
+}
+
+@include for-tablet-up {
+  .contacts {
+    &__header {
+      color: $black;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+    &__header::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background: url("../images/tablet/flag.png") no-repeat;
+    }
+  }
+  .table-contacts {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@include for-desktop-up {
+  .contacts {
+    &__btn {
+      width: 230px;
+    }
   }
 }

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <section class="mobile-menu">
+  <section class="mobile-menu active">
     <ul class="mobile-menu__container">
       <a class="mobile-menu__link" href="#">
         <li class="mobile-menu__item mobile-menu__item--logo">
@@ -63,17 +63,35 @@
   </section>
   <section class="top-menu-tablet-up">
     <div class="wrapper">
-      <img class="main-logo--top-menu" src="../images/tablet/mishka-logo-tablet.png">
+      <img class="main-logo--top-menu" src="./images/tablet/mishka-logo-tablet.png">
       <div class="cart-block"><span class="cart-block__cart-status">Корзина: пока пуста</span></div>
       <div class="search-block"></div>
+    </div>
+  </section>
+  <section class="top-menu-desktop-up">
+    <div class="wrapper">
+      <div class="top-menu-desktop-up__container">
+        <a class="hero-links__link">Каталог товаров</a>
+        <div class="top-menu-desktop-up__divider"></div>
+        <a class="hero-links__link">Вязание на заказ</a>
+        <div class="logo-placeholder"></div>
+        <img class="main-logo--top-menu" src="./images/desktop/mishka-logo-desktop.png">
+        <div class="search-block"></div>
+        <div class="cart-block"><span class="cart-block__cart-status">Корзина: пока пуста</span></div>
+      </div>
     </div>
   </section>
   <header class="main-header">
     <div class="main-header__hero">
       <div class="wrapper">
-        <div class="hero-links">
-          <a class="hero-links__link">Каталог товаров</a>
-          <a class="hero-links__link">Вязание на заказ</a>
+        <div class="hero-links--tablet">
+          <a class="hero-links__link hero-links__link">Каталог товаров</a>
+          <a class="hero-links__link hero-links__link">Вязание на заказ</a>
+          <a class="hero-links__link--delivery">Бесплатная доставка по России</a>
+        </div>
+        <div class="hero-links--desktop">
+          <a class="hero-links__link hero-links__link--catalog">Новые поступления</a>
+          <a class="hero-links__link hero-links__link--order">Распродажа</a>
           <a class="hero-links__link--delivery">Бесплатная доставка по России</a>
         </div>
       </div>
@@ -97,15 +115,13 @@
         </div>
       </div>
     </div>
+
   </header>
-  <section class="featured">
-    <div class="wrapper">
-
+  <div class="wrapper">
+    <section class="featured">
       <div class="weekly-deal">
-
         <span class="weekly-deal__header">Вязаные корзинки</span>
         <span class="weekly-deal__subheader">Товар недели</span>
-
         <div class="featured__container">
           <div class="weekly-deal__container">
             <p class="weekly-deal__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -124,7 +140,7 @@
               </tr>
             </table>
             <div class="weekly-deal__img-container-mobile">
-              <img class="weekly-deal__img" src="../images/mobile/triple-set-mobile.jpg">
+              <img class="weekly-deal__img" src="./images/mobile/triple-set-mobile.jpg">
             </div>
             <div class="price-n-button-container-tablet">
               <span class="price">Цена: 990 руб.</span>
@@ -132,15 +148,16 @@
             </div>
           </div>
           <div class="weekly-deal__container--tablet">
-            <img class="weekly-deal__img" src="../images/tablet/triple-set-tablet.jpg">
+            <img class="weekly-deal__img" src="./images/tablet/triple-set-tablet.jpg">
+          </div>
+          <div class="weekly-deal__container--desktop">
+            <img class="weekly-deal__img" src="./images/desktop/triple-set-desktop.jpg">
           </div>
         </div>
       </div>
-
-
-    </div>
-    <div class="zigzag-line"></div>
-  </section>
+    </section>
+  </div>
+  <div class="zigzag-line"></div>
   <section class="about">
     <div class="wrapper">
       <span class="about__header">Коротко о нас:</span>
@@ -159,31 +176,39 @@
           <div class="features__icon-6"></div>Поставляется в подарочной упаковке</li>
       </ul>
       <div class="reviews">
-        <span class="reviews__header">Отзывы</span>
-        <div class="slider-container">
-          <p class="user-review"> В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
-          </p>
-          <span class="user-review user-review__username">Анастасия Красильникова</span>
-          <span class="user-revie user-review__twitter">@misssssiskras</span>
+        <div class="reviews-layout-container">
+          <div class="reviews-container">
+            <span class="reviews__header">Отзывы</span>
+            <div class="slider-container">
+              <p class="user-review"> В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают
+                больше лайков!
+              </p>
+              <span class="user-review user-review__username">Анастасия Красильникова</span>
+              <span class="user-revie user-review__twitter">@misssssiskras</span>
+            </div>
+            <div class="slider-container">
+              <p class="user-review">
+                Потрясающий магазин
+              </p>
+              <span class="user-review user-review__username">Ольга Иванова</span>
+              <span class="user-revie user-review__twitter">@asiskras</span>
+            </div>
+            <div class="slider-container">
+              <p class="user-review">Замечательный магазин В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более
+                стильнее, а также набирают больше лайков!
+              </p>
+              <span class="user-review user-review__username">Эльвира Петрова</span>
+              <span class="user-review user-review__twitter">@elvirassdd</span>
+            </div>
+          </div>
+          <div class=controls-container>
+            <div class="slider-buttons__container">
+              <button type="button" name="button" class="btn slider-buttons__prev" onclick="plusDivs(-1)"><div class="slider-buttons__icon-left-arrow"></div></button>
+              <button type="button" name="button" class="btn slider-buttons__next" onclick="plusDivs(+1)"><div class="slider-buttons__icon-right-arrow"></div></button>
+            </div>
+            <button type="button" name="button" class="btn reviews__btn">Написать</button>
+          </div>
         </div>
-        <div class="slider-container">
-          <p class="user-review">
-            Потрясающий магазин
-          </p>
-          <span class="user-review user-review__username">Ольга Иванова</span>
-          <span class="user-revie user-review__twitter">@asiskras</span>
-        </div>
-        <div class="slider-container">
-          <p class="user-review">Замечательный магазин В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
-          </p>
-          <span class="user-review user-review__username">Эльвира Петрова</span>
-          <span class="user-revie user-review__twitter">@elvirassdd</span>
-        </div>
-        <div class="slider-buttons__container">
-          <button type="button" name="button" class="btn slider-buttons__prev" onclick="plusDivs(-1)"><div class="slider-buttons__icon-left-arrow"></div></button>
-          <button type="button" name="button" class="btn slider-buttons__next" onclick="plusDivs(+1)"><div class="slider-buttons__icon-right-arrow"></div></button>
-        </div>
-        <button type="button" name="button" class="btn reviews__btn">Написать</button>
       </div>
     </div>
     <div class="zigzag-line"></div>
@@ -191,16 +216,16 @@
   <section class="contacts">
     <div class="wrapper">
       <span class="contacts__header">Контакты</span>
-      <table class="table-contacts">
-        <tr>
-          <td class="table-contacts__email">e-mail:</td>
-          <td class="table-contacts__email-val"><span class="table-contacts__email-link">info@mimimishkashop.ru</span></td>
-        </tr>
-        <tr>
-          <td class="table-contacts__adress">адрес:</td>
-          <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-        </tr>
-      </table>
+      <div class="table-contacts">
+        <div class="table-contacts__item">
+          <span class="table-contacts__email">e-mail:</span>
+          <span class="table-contacts__email-val"><span class="table-contacts__email-link">info@mimimishkashop.ru</span></span>
+        </div>
+        <div class="table-contacts__item">
+          <span class="table-contacts__adress">адрес:</span>
+          <span>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
+        </div>
+      </div>
     </div>
     <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
     <div id="YMapsID" style="height:460px"></div>
@@ -209,7 +234,9 @@
     </div>
   </section>
   <footer class="main-footer">
-    <div class="wrapper">
+    <div class="wrapper main-footer">
+      <div class="mishka-logo-no-bg"> </div>
+
       <div class="social-icons-container">
         <a href="#">
           <div class="icon-social icon-social--insta"></div>
@@ -221,21 +248,16 @@
           <div class="icon-social icon-social--twitter"></div>
         </a>
       </div>
-    </div>
-    <div class="wrapper">
       <div class="divider divider--footer">
       </div>
-    </div>
-    <div class="wrapper">
       <div class="copyright">
         <span>Разработано</span>
         <a href="#">
           <div class="icon-academy icon-academy--footer"></div>
         </a>
       </div>
-    </div>
-    </div>
   </footer>
+
   <!--build:js js/main.min.js -->
   <script src="js/lib/a-library.js"></script>
   <script src="js/lib/another-library.js"></script>

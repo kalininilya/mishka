@@ -1,60 +1,69 @@
-.main-header {
-  &__hero {
-    background: url("../images/mobile/hero-mobile.jpg") no-repeat;
-    background-size: cover;
-    height: 205px;
-    padding-top: 95px;
-  }
-  &__hero-text {
-    text-align: center;
-    font-family: $main-font, $main-ff;
-    font-weight: 700;
-    font-size: 24px;
-    margin: 0;
-  }
-  &__wrapper {
-    width: 260px;
-    margin: 0 auto;
-    position: relative;
-  }
-}
-
-.category {
-  height: 103px;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-family: $secondary-font, $main-ff;
-  font-weight: 700;
-  color: $white;
-  &--bright {
-    background-color: $light-green;
-  }
-  &--dark {
-    background-color: $dark-green;
-  }
-  &__icon-interior {
-    width: 40px;
-    height: 62px;
-    opacity: 0.5;
-    background: url("../images/mobile/interior-icon.png");
-    position: absolute;
-    right: 9px;
-    top: -7px;
-  }
-  &__icon-toy {
-    width: 60px;
-    height: 60px;
-    opacity: 0.5;
-    background: url("../images/mobile/toy-icon.png");
-    position: absolute;
-    right: 0;
-    top: -7px;
-  }
-}
-
 @include for-mobile-only {
+  .main-header {
+    &__hero {
+      background: url("../images/mobile/hero-mobile.jpg") no-repeat center;
+      background-size: cover;
+      height: 205px;
+      padding-top: 95px;
+    }
+    &__hero-text {
+      text-align: center;
+      font-family: $main-font, $main-ff;
+      font-weight: 700;
+      font-size: 24px;
+      margin: 0;
+    }
+    &__wrapper {
+      width: 260px;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
+  .category {
+    height: 103px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: $secondary-font, $main-ff;
+    font-weight: 700;
+    color: $white;
+    &--bright {
+      background-color: $light-green;
+    }
+    &--dark {
+      background-color: $dark-green;
+    }
+    &__icon-interior {
+      width: 40px;
+      height: 62px;
+      opacity: 0.5;
+      background: url("../images/mobile/interior-icon.png");
+      position: absolute;
+      right: 9px;
+      top: -7px;
+    }
+    &__icon-toy {
+      width: 60px;
+      height: 60px;
+      opacity: 0.5;
+      background: url("../images/mobile/toy-icon.png");
+      position: absolute;
+      right: 0;
+      top: -7px;
+    }
+  }
   .hero-links {
+    display: none;
+  }
+  .hero-links {
+    &--desktop {
+      display: none;
+    }
+    &--tablet {
+      display: none;
+    }
+  }
+  .top-menu-desktop-up {
     display: none;
   }
 }
@@ -62,9 +71,10 @@
 @include for-tablet-up {
   .main-header {
     position: relative;
-    background: url("../images/tablet/hero-tablet.jpg") no-repeat;
+    background: url("../images/tablet/hero-tablet.jpg") no-repeat center;
     background-size: cover;
     &__hero {
+      background: none;
       height: 640px;
       padding-top: 25px;
     }
@@ -92,7 +102,17 @@
     }
   }
   .hero-links {
+    &--desktop {
+      display: none;
+    }
     &__link {
+      &:hover{
+        opacity: 0.7;
+      }
+      &:active{
+        opacity: 0.4;
+      }
+      cursor: pointer;
       font-size: 14px;
       font-weight: 700;
       font-family: $main-font, $main-ff;
@@ -146,5 +166,23 @@
     &__container {
       display: flex;
     }
+  }
+}
+
+@include for-desktop-up {
+  .hero-links {
+    // display: none;
+    &__link {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+    &--tablet {
+      display: none;
+    }
+  }
+  .main-header {
+    background: url("../images/desktop/hero-desktop.jpg") no-repeat center;
+    background-size: cover;
   }
 }

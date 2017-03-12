@@ -2,6 +2,9 @@
   .top-menu-tablet-up {
     display: none;
   }
+  .active{
+    display: block;
+  }
   .top-menu-mobile {
     &__link {
       text-decoration: none;
@@ -103,5 +106,51 @@
     left: 31px;
     width: 21px;
     height: 18px;
+  }
+  .top-menu-desktop-up {
+    display: none;
+  }
+}
+
+@include for-desktop-up {
+  .top-menu-tablet-up {
+    display: none;
+  }
+  .top-menu-desktop-up {
+    display: block;
+    min-height: 88px;
+  }
+  .main-logo--top-menu{
+    position: absolute;
+    left: 45%;
+  }
+  .logo-placeholder{
+    height: 10px;
+    width: 10px;
+    flex-grow: 1;
+  }
+  // .hero-links {
+  //   display: none;
+  //   &__link {
+  //     font-size: 16px;
+  //     font-weight: 700;
+  //     line-height: 24px;
+  //     height: 100%;
+  //   }
+  // }
+  .top-menu-desktop-up {
+    display: flex;
+    border-bottom: 1px solid $border-bottom;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__divider{
+      height: 88px;
+      width: 1px;
+      margin-right: 30px;
+      background-color: $border-bottom;
+    }
   }
 }
